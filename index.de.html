@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lazy GM Session Prep</title>
+  <script src="https://unpkg.com/pagedjs/dist/paged.polyfill.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+
+  <style>
+    @page {
+      size: 179.7mm 239.6mm;
+      margin: 2mm;
+      margin-top: 13mm;
+    }
+
+    :root {
+      --color-bg: #FFFFFF;
+      --color-surface: white;
+      --color-accent: gray;
+      --color-text: black;
+
+      --gap: 1mm;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Rubik Dirt", system-ui;
+      font-weight: 400;
+      font-style: normal;
+
+      background: var(--color-bg);
+      color: var(--color-text);
+      font-size: 9pt;
+    }
+
+    /* Jede .page wird eine PDF-Seite */
+    .page {
+      width: 100%;
+      height: 100%;
+      break-after: page;
+
+      display: grid;
+      gap: var(--gap);
+      /* Segmente hier definieren — z.B. 3 Zeilen */
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .segment {
+      background: var(--color-surface);
+      border: 1px solid var(--color-accent);
+      padding: 2mm;
+      overflow: hidden;
+    }
+
+    .segment h2 {
+      font-size: 8pt;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--color-text);
+      margin: 0 0 2mm 0;
+      border-bottom: 1px solid var(--color-accent);
+      padding-bottom: 1mm;
+    }
+
+    /* Segment-Layouts */
+    .segment--full {
+      grid-column: 1 / -1;
+    }
+
+    .segment--half {
+      grid-column: span 1;
+    }
+
+    .move-right {
+      display: inline-block;
+      margin-right: 45mm;
+      float: right;
+    }
+  </style>
+</head>
+</head>
+
+<body>
+
+  <body>
+
+    <div class="page">
+
+      <div class="segment segment--full">
+        <h2>Strong Start<span class="move-right">Session:</span></h2>
+      </div>
+
+      <div class="segment segment--half">
+        <h2>Potenzielle Szenen</h2>
+      </div>
+
+      <div class="segment segment--half">
+        <h2>Wichtige NPCs</h2>
+      </div>
+
+      <div class="segment segment--half">
+        <h2>Fantastische Orte</h2>
+      </div>
+
+      <div class="segment segment--half">
+        <h2>Geheimnisse</h2>
+      </div>
+
+      <div class="segment segment--half">
+        <h2>Relevante Kämpfe/Monster</h2>
+      </div>
+
+      <div class="segment segment--half">
+        <h2>Loot & Schätze</h2>
+      </div>
+    </div>
+
+  </body>
+
+</html>

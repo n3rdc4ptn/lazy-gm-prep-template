@@ -1,0 +1,17 @@
+{
+  "name": "lazy-gm-prep-pdf",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "scripts": {
+    "dev": "bun --hot index.html",
+    "render": "bunx pagedjs-cli index.html -o output.pdf --width 179.7mm --height 239.6mm",
+    "render-de": "bunx pagedjs-cli index.de.html -o output.de.pdf --width 179.7mm --height 239.6mm"
+  }
+}
