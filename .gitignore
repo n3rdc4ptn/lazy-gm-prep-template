@@ -1,4 +1,4 @@
-output.pdf
+output/*.pdf
 
 # dependencies (bun install)
 node_modules

@@ -10,8 +10,14 @@
     "typescript": "^5"
   },
   "scripts": {
-    "dev": "bun --hot index.html",
-    "render": "bunx pagedjs-cli index.html -o output.pdf --width 179.7mm --height 239.6mm",
-    "render-de": "bunx pagedjs-cli index.de.html -o output.de.pdf --width 179.7mm --height 239.6mm"
+    "dev": "bun --hot templates/system-agnostic/lazy-gm-session-prep/paper-pro/en.html",
+    "dev:de": "bun --hot templates/system-agnostic/lazy-gm-session-prep/paper-pro/de.html",
+    "render": "bun scripts/render.ts",
+    "render:lazy-gm": "bun scripts/render.ts templates/system-agnostic/lazy-gm-session-prep/paper-pro/en.html",
+    "render:lazy-gm:de": "bun scripts/render.ts templates/system-agnostic/lazy-gm-session-prep/paper-pro/de.html",
+    "dev:adversary": "bun --hot templates/daggerheart/adversary/paper-pro-move/en.html",
+    "dev:adversary:de": "bun --hot templates/daggerheart/adversary/paper-pro-move/de.html",
+    "render:adversary": "bun scripts/render.ts templates/daggerheart/adversary/paper-pro-move/en.html",
+    "render:adversary:de": "bun scripts/render.ts templates/daggerheart/adversary/paper-pro-move/de.html"
   }
 }
