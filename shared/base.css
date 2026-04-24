@@ -23,12 +23,15 @@ body {
 .page {
   width: 100%;
   height: 100%;
-  break-after: page;
 
   display: grid;
   gap: var(--gap);
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr;
+}
+
+.page:not(:last-child) {
+  break-after: page;
 }
 
 .segment {

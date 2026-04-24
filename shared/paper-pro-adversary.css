@@ -1,0 +1,11 @@
+@page {
+  size: 179.7mm 239.6mm;
+  margin: 2mm;
+  margin-top: 13mm;
+}
+
+.card-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2mm;
+}

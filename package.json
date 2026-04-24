@@ -19,5 +19,8 @@
     "dev:adversary:de": "bun --hot templates/daggerheart/adversary/paper-pro-move/de.html",
     "render:adversary": "bun scripts/render.ts templates/daggerheart/adversary/paper-pro-move/en.html",
     "render:adversary:de": "bun scripts/render.ts templates/daggerheart/adversary/paper-pro-move/de.html"
+  },
+  "dependencies": {
+    "pdf-lib": "^1.17.1"
   }
 }
