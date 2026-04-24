@@ -1,0 +1,160 @@
+.card-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-page:not(:last-child) {
+  break-after: page;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  gap: 1mm;
+  gap: var(--gap);
+  grid-template-rows: auto 0.5fr 0.3fr auto auto 0.3fr 1fr;
+  grid-template-columns: 1fr;
+}
+
+.card-header,
+.card-section,
+.card-stat {
+  border: 1px solid var(--color-accent);
+  overflow: hidden;
+  min-height: 7mm;
+}
+
+.card-header,
+.card-section {
+  padding: 1mm;
+  padding-bottom: 0.5mm;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex: 0 0 auto;
+  gap: 2mm;
+  padding-right: 2mm;
+}
+
+.card-header h1 {
+  font-size: 12pt;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1;
+}
+
+.card-header .tier-type {
+  align-self: flex-start;
+  font-size: 4pt;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-accent);
+  white-space: nowrap;
+}
+
+.tier-type .gap {
+  display: inline-block;
+  width: 4mm;
+  text-align: center;
+}
+
+.card-section {
+  flex: 1;
+  min-height: 0;
+}
+
+.card-section--tight {
+  flex: 0 0 auto;
+}
+
+.card-section h3 {
+  font-size: 7pt;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 1mm 0;
+  padding-bottom: 0.5mm;
+  border-bottom: 1px solid var(--color-accent);
+  color: var(--color-text);
+}
+
+.card-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1mm;
+  flex: 0 0 auto;
+}
+
+.card-stat {
+  padding: 1mm;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  gap: 0.5mm;
+}
+
+.card-stat .label {
+  font-size: 5.5pt;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-accent);
+  line-height: 1;
+}
+
+.card-stat .value {
+  font-size: 9pt;
+  line-height: 1;
+  color: var(--color-accent);
+}
+
+.track {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5mm;
+  justify-content: center;
+}
+
+.track-box {
+  width: 2.5mm;
+  height: 2.5mm;
+  border: 1px solid var(--color-accent);
+  display: inline-block;
+  flex: 0 0 auto;
+}
+
+.attack-line {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr 0.5fr;
+  gap: 1mm;
+
+  min-height: 5mm;
+}
+
+.attack-line div {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: baseline;
+}
+
+.attack-line div .label {
+  font-size: 4pt;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-accent);
+  white-space: nowrap;
+}
+
+.attack-line div .fill {
+  flex: 1;
+  border-bottom: 0.5px solid var(--color-accent);
+  width: 100%;
+}
