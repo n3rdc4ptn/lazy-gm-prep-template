@@ -12,7 +12,7 @@ The repo started as a single Lazy GM prep sheet and has since grown into a multi
 | Adversary Cards | Daggerheart | Paper Pro | EN, DE |
 | Adversary Cards | Daggerheart | Paper Pro Move | EN, DE |
 
-Prebuilt PDFs are attached to each [GitHub release](https://github.com/n3rdc4ptn/lazy-gm-prep-template/releases) so you can download them directly without running the toolchain.
+Prebuilt PDFs are attached to each [GitHub release](https://github.com/n3rdc4ptn/ttrpg-prep-templates/releases) so you can download them directly without running the toolchain.
 
 ## How to use
 
